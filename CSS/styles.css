@@ -1,0 +1,305 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Variables globales */
+:root{
+    --Color0:#E5E5E5;
+    --Color1: #FFFFFF;
+    --Color2: #0A3871;
+    --Color3: #c5c5c5;
+    --Color4: #67808E;
+    --Color5: #000000;
+    --Color6: #D8DFE8;
+    --Color7: #0A38718A;
+    --Color8: #343a40;
+    --Color9: #495057;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    background-color: var(--Color1);
+}
+/* Estilos seleccion */
+::selection{
+    background-color: var(--Color2);
+    color: var(--Color1);
+}
+
+body{
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* hEADER */
+
+header{
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+}
+
+header .log{
+    display: flex;
+    align-items: flex-start;
+    width: 120px;
+    height: 40px;
+}
+
+/* Seccion central */
+
+main{
+    display: flex;
+    flex-direction: row;
+    background: url(../assets/portada.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.insert{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background-color: transparent;
+}
+
+.textin{
+    width: 660px;
+    height: 288px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    outline: none;
+    border-radius: 15px;
+    resize: none;
+}
+
+.textin::placeholder,:focus{
+    color: var(--Color2);
+}
+
+.encripAdvice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    top: 500PX;
+}
+
+.txtAdvice{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--Color4);
+}
+
+.encripButton{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.butEnc{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Color1);
+    background: var(--Color2);
+    border: 1px solid var( --Color2);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px -5px var(--Color5);
+}
+
+.butEnc:active{
+    box-shadow: inset 2PX 2PX 4PX var(--Color0);
+    inset: -3px -4px 8px var(--Color2);
+    color: var(--Color6);
+}
+
+.butDes{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Color2);
+    background: var(--Color6);
+    border: 1px solid var( --Color2);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px -5px var(--Color5);
+}
+.butCopy:active,
+.butDes:active{
+    box-shadow: inset 2PX 2PX 4PX var(--Color2);
+    inset: -3px -4px 8px var(--Color0);
+    color: var(--Color7);
+}
+
+
+.out{
+    width: 270px;
+    height: 500px;
+    background: var(--Color0);
+    box-shadow: 10px 24px 32px -8px var(--Color8);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.card{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--Color0);
+}
+
+.imgCard{
+    background: var(--Color0);
+}
+
+.txt1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: (var(--Color8));
+    background: var(--Color0);
+}
+
+.txt2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Color4);
+    background: var(--Color0);
+}
+
+.textout{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Color9);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.textout{
+    outline: none;
+}
+
+.butCopy{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--Color6);
+    border: 1px solid var(--Color7);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.butDes:hover,
+.butEnc:hover,
+.butCopy:hover{
+    transform: scale(0.97);
+}
+
+/* Responsive */
+
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .insert{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encripButton{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encripAdvice{
+        position: inherit;
+        margin: 15px;
+    }
+
+    .out{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+    .card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .imgCard{
+        display: none;
+    }
+}
+
+/* @media(max-width:) */
+

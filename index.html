@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Encriptador texto</title>
+</head>
+<body>
+    <!-- Heder de pagina -->
+    <header>
+        <a href="#" rel="">
+            <img src="./assets/logo.svg" alt="Logo pagina" class="log">
+        </a>
+    </header>
+    <!-- Encriptador -->
+    <main>
+        <!-- Codigo a Desencriptar -->
+        <div class="insert">
+            <div class="main">
+                <textarea class="textin" type="mensaje" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="encripAdvice">
+                <!-- Pendiente -->
+                <img src="./assets/aviso.svg" alt="Logo Aviso" class="imgAdvice">
+                <p class="txtAdvice">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="encripButton">
+                <button class="butEnc" type="submit">Encriptar</button>
+                <button class="butDes" type="submit">Desencriptar</button>
+            </div>
+        </div>
+        <div class="out">
+            <div class="card">
+                <!-- pendiente -->
+                <img src="./assets/muñeco.svg" alt="Imgane de Salida" class="imgCard">
+                <p class="txt1">Ningún mensaje fue encontrado</p>
+                <p class="txt2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea class="textout" type="mensaje" readonly></textarea>
+            <button class="butCopy" type="submit">Copiar</button>
+        </div>
+    </main>
+    <!-- Sin Footer -->
+    <footer></footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
